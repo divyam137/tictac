@@ -1,0 +1,77 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#game{
+    width: 1800px;
+    height: 500px;
+    border: 2px;
+    border: 1px solid;
+    border-color: black;
+    background-image: url("https://i.pinimg.com/originals/f9/47/74/f94774094cdb0632c80e94a27d4de239.gif");
+    background-size: cover;
+    background-position: center;
+}
+#char{
+    width: 85px;
+    height: 60px;
+    background-image: url("https://th.bing.com/th/id/R.5ced5029a473e2f07f5283a1b4488a13?rik=Ca9VEMxYucXBNA&riu=http%3a%2f%2fvignette4.wikia.nocookie.net%2fdinorun%2fimages%2f8%2f88%2fDino_edit.gif%2frevision%2flatest%3fcb%3d20140705185945&ehk=JFEKgy2j7llvAJ9lZsVaDiUjIDKyDPBPQUUlVGrNCFs%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+   /* background-color: blue;*/
+    margin-left: 130px;
+    position: relative;
+    top: 440px;
+    
+}
+.animate
+{
+    animation: char 500ms ;
+}
+#block{
+    width: 50px;
+    height: 80px;
+   background-image: url("https://clipartcraft.com/images/tree-clipart-transparent.png");
+   /* background-color: red;*/
+   background-size: cover;
+   background-position: center;
+    position: relative;
+    top : 360px ;
+    left: 1370px;
+    animation: block 3s infinite;
+
+    
+}
+@keyframes block{
+    0%{
+        left: 1770px;
+    }
+    100%{
+        left: -100px;
+    }
+}
+@keyframes char{
+    0%{
+        top: 450px;
+    }
+    30%{
+        top: 350px;
+    }
+    40%{
+        top: 325px;
+    }
+    50%{
+        top: 320px;
+    }
+    60%{
+        top: 325px;
+    }
+    70%{
+        top:350px;
+    }
+    100%{
+        top:450px;
+    }
+    
+
+}
