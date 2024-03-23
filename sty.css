@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/532/221/original/tic-tac-toe-seamless-background-on-dark-blue-illustration-vector.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+ 
+}
+.container{
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vmin;
+    width: 65vmin;
+   
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 50px;
+    color: blue;
+    background-color: whitesmoke;
+    
+
+
+}
+.box:hover{
+    background-color:aqua ;
+    transition-duration: 1s;
+    height:35%;
+    width:35%
+    
+    
+    
+}
+
+.reset{
+    padding: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: beige;
+    position: relative;
+    bottom: 120px;
+    
+}
+.reset:hover
+{
+    transition-duration: 1s;
+    border-radius: 80px;
+    height: 10%;
+    width: 20%;
+    background-color: blue;
+    color: aqua;
+}
+#win{
+    font-size: 50px;
+    width: auto;
+    color:  cornflowerblue;
+    padding-bottom:15px ;
+}
+#winb{
+    border-radius: 20px;
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+   
+}
+#winb:hover{
+    background-color: blue;
+    color: aqua;
+    transition-duration: 1s;
+    height: 30%;
+    width: 50%;
+    
+}
+#heading{
+    background-color: black;
+    color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.hide{
+    display: none;
+}
+.hide1{
+    display: none;
+}
+.msg{
+    height: 15%;
+    animation: slideInLeft 0.5s ease-in 0s 1 normal none;
+}
+@keyframes slideInLeft
+{
+    from{
+        transform: translateY(-15px);
+    }
+    to{transform: translateY(0px);}
+}
+@keyframes slideInright
+{
+    0%{
+        transform: translateX(420px);
+    }
+    50%{transform: translateX(150px);}
+
+    50.02%{
+        transform: translateX(150px);
+        
+    }
+    100%
+    {
+        transform: translateX(420px);
+    }
+}
+#head{
+    animation: slideInright 5s ease-in 0s infinite normal none;
+    width:60% ;
+
+}
+
+    .aud{
+        
+        width: 100px;
+        height: 50px;
+        padding-left: 0%;
+        display: flex;
+        position: relative;
+        left:1350px ;
+        bottom: 630px;
+        margin: 50px;
+        /*margin-left: 80%;*/
+    }
+    #design1{
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url("https://th.bing.com/th/id/R.91bcb47bcfddd4e0e302b46c55df72b1?rik=qI90VR6KR3ZV8A&riu=http%3a%2f%2fwww.drodd.com%2fimages15%2fred-x5.png&ehk=5UCC4XzuWQ1ljthK9LBaiXHAYYzRd9zys12BahktuOg%3d&risl=&pid=ImgRaw&r=0");
+        background-size: cover;
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 450px;
+        left: 100px;
+        animation: slideIn1 5s  infinite ;
+        
+    }
+    #design2{
+        flex-wrap: wrap;
+        display: flex;
+        background-image: url("https://pngimg.com/uploads/circle/circle_PNG42.png");
+        background-size: cover;
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 650px;
+        left: 1200px;
+        animation: slideIn 5s  infinite ;
+
+    }
+    @keyframes slideIn
+{
+    0%{
+        transform: translateY(140px);
+    }
+    50%{transform: translateY(-140px);}
+
+    50.02%{
+        transform: translateY(-140px);
+        
+    }
+    100%
+    {
+        transform: translateY(140px);
+    }
+}
+@keyframes slideIn1
+{
+    0%{
+        transform: translateY(-140px);
+    }
+    50%{transform: translateY(140px);}
+
+    50.02%{
+        transform: translateY(140px);
+        
+    }
+    100%
+    {
+        transform: translateY(-140px);
+    }
+}
